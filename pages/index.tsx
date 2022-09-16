@@ -1,14 +1,11 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import Layout from "../components/Layout";
 
 const Home: NextPage = () => {
   return (
-    <div></div>
-
-    
-  )
-     
-
-export default Home
+    <Layout title="Sokoni">
+      <h1>Welcome Home</h1>
+    </Layout>
+  );
+};
+export default Home;
