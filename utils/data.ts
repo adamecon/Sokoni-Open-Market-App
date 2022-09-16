@@ -15,7 +15,7 @@ const data = {
       description: "a multicolored shirt that fits your body well",
     },
     {
-      name: "Shirt",
+      name: "Shorts",
       slug: "shirt",
       category: "shirts",
       image: "./assets/Screenshot (206).png",
@@ -27,7 +27,7 @@ const data = {
       description: "a multicolored shirt that fits your body weel",
     },
     {
-      name: "Shirt",
+      name: "pants",
       slug: "shirt",
       category: "shirts",
       image: "./assets/Screenshot (206).png",
@@ -39,7 +39,7 @@ const data = {
       description: "a multicolored shirt that fits your body weel",
     },
     {
-      name: "Shirt",
+      name: "socks",
       slug: "shirt",
       category: "shirts",
       image: "./assets/Screenshot (206).png",
@@ -51,7 +51,7 @@ const data = {
       description: "a multicolored shirt that fits your body weel",
     },
     {
-      name: "Shirt",
+      name: "t-shirt",
       slug: "shirt",
       category: "shirts",
       image: "./assets/Screenshot (206).png",
@@ -63,7 +63,7 @@ const data = {
       description: "a multicolored shirt that fits your body weel",
     },
     {
-      name: "Shirt",
+      name: "jacket",
       slug: "shirt",
       category: "shirts",
       image: "./assets/Screenshot (206).png",

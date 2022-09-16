@@ -16,7 +16,7 @@ const ProductCard = ({ product }: any) => {
       <div className="flex flex-col items-center justify-center p-5">
         <Link href={`/product/${product.slug}`}>
           <a>
-            <h2 className="text-lg"></h2>
+            <h2 className="text-lg">{product.name}</h2>
           </a>
         </Link>
         <p className="mb-2">{product.brand}</p>
