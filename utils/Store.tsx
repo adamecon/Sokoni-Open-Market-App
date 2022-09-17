@@ -26,4 +26,6 @@ function reducer(state: any, action: any) {
 }
 export function StoreProvider({ children }: any) {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const value = { state, dispatch };
+  return <Store.Provider value={value}>{children}</Store.Provider>;
 }
