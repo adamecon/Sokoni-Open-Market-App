@@ -22,7 +22,7 @@ const ProductScreen = () => {
   }
 
   const addToCartHandler = () => {
-    dispatch({ type: "CART_ADD_ITEM", payload: { ...product, quantity: 1 } });
+    dispatch({ type: "CART_ADD_ITEMS", payload: { ...product, quantity: 1 } });
   };
   return (
     <Layout title={product.name}>
