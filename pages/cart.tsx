@@ -5,8 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { XCircleIcon } from "@heroicons/react/outline";
 import { Router, useRouter } from "next/router";
+import dynamic from "next/dynamic";
 
-const CartScreen = () => {
+function CartScreen() {
   const router = useRouter();
   const { state, dispatch }: any = useContext(Store);
   const {
@@ -65,7 +66,7 @@ const CartScreen = () => {
                           updateCartHandler(item, e.target.value)
                         }
                       >
-                        {[...Array(item.stock).keys()].map((x: any) => (
+                        {[...Array(item.stock).keys()].map((x) => (
                           <option key={x + 1} value={x + 1}>
                             {x + 1}
                           </option>
@@ -113,6 +114,6 @@ const CartScreen = () => {
       )}
     </Layout>
   );
-};
+}
 
-export default CartScreen;
+export default dynamic(() => Promise.resolve(CartScreen), { ssr: false });
