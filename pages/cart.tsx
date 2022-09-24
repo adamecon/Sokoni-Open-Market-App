@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import { Store } from "../utils/Store";
 import Link from "next/link";
 import Image from "next/image";
-import { XCircleIcon } from "@heroicons/react/outline";
+
 import { Router, useRouter } from "next/router";
 import dynamic from "next/dynamic";
 
@@ -103,7 +103,7 @@ function CartScreen() {
               <li>
                 <button
                   className="primary-button w-full"
-                  onClick={() => router.push("/shiping")}
+                  onClick={() => router.push("login ? redirect = /shiping")}
                 >
                   Proceed To Check Out
                 </button>

@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Layout from "../components/Layout";
 import ProductCard from "../components/ProductCard";
 import data from "../utils/data";
+import dynamic from "next/dynamic";
 
 const Home: NextPage = () => {
   return (
@@ -14,4 +15,5 @@ const Home: NextPage = () => {
     </Layout>
   );
 };
+
 export default Home;
