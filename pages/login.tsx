@@ -10,7 +10,9 @@ export default function LoginScreen() {
     formState: { errors },
   } = useForm();
 
-  const submitHandler = ({ email, password }: any) => {};
+  const submitHandler = ({ email, password }: any) => {
+    console.log(email, password);
+  };
 
   return (
     <Layout title="Login">

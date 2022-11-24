@@ -1,6 +1,21 @@
 import { setUncaughtExceptionCaptureCallback } from "process";
+import bcrypt from "bcryptjs";
 
 const data = {
+  users: [
+    {
+      name: "Adams",
+      email: "okeyoadams@gmail.com",
+      password: bcrypt.hashSync("12345678"),
+      isAdmin: true,
+    },
+    {
+      name: "Jane",
+      email: "ochanjijane@gmail.com",
+      password: bcrypt.hashSync("12345678"),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
       name: "Shirt",
